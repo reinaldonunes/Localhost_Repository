@@ -5,5 +5,5 @@ List your projects using this customized repository: more elegance, more practic
 <br /><br />
 ## HOW TO USE
 The Index file and assets folder should be directly inside your local server's htdocs or htmldocs folder (XAMPP, WAMP, etc).
-<br /.
+<br />
 When accessing http://localhost/ in the browser, the file will be conjured and list your folders more elegantly. 
