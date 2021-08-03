@@ -1,0 +1,151 @@
+/*  CSS Reset by Reinaldo J. Nunes
+    reinaldo.nunes2@gmail.com
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    text-decoration:none;
+    outline: 0;
+    list-style:none;
+}
+/* --- SETTING HTML5 TAGS -- */
+article, aside, address,
+blockquote, button, 
+code, colgroup, 
+details,
+figcaption, figure, footer, fieldset,
+header, hgroup, 
+i,
+label, legend,
+map, menu, 
+nav, 
+object, 
+section, source{
+    display: block;
+}
+img{
+    width:auto;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+/**********  ANOTHER ELEMENTS *********/
+a, button{
+    transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -moz-transition-duration:0.2s;
+}
+/********** ALIGNS **********/
+.right{margin-right:0px;margin-left:auto}
+.left{margin-left:0px;margin-right:auto}
+.center{margin-left:auto;margin-right:auto}
+.middle{align-items:center;}
+.t-center{text-align:center;}
+.t-right{text-align:right;}
+/********** BACKGROUNDS, TEXTURES AND CONTAINERS **********/
+.container{
+    width:100%;
+    padding-left:20px;
+    padding-right:20px;
+    display: flex;
+    height:auto;
+}
+
+/* GRIDs SITE */
+.flex, .flex_w, .flex_c, .flex_r, .flex_e{display:flex;}
+.flex_w{flex-wrap:wrap;}
+.flex_r{justify-content: space-between;}
+.flex_e{justify-content: space-evenly;}
+.flex_c{flex-direction: column;}
+html,body{
+    background:#f5f5f5;
+}
+header{
+    background:#FFF;
+    width:100%;
+    padding:20px;
+    box-shadow:0px 0px 10px #eee;
+    z-index:2;
+    position:relative;
+}
+header figure{
+    width:100%;
+}
+header figure img{
+    width:163px;
+    margin:0 auto;
+    display:table;
+}
+.list-folder{
+    padding:30px 20px;
+}
+.list-folder li{
+    width:19%;
+}
+.list-folder li a{
+    padding:20px;
+    display:flex;
+    align-items:center;
+    font-size:12px;
+    color:#999;
+    font-weight:700;
+    font-family:'Montserrat',sans-serif;
+    border:1px solid transparent;
+    border-radius:5px;
+    overflow:hidden;
+}
+.list-folder li:hover a{
+    background:#fff;
+    color:#23305C;
+    border:1px solid #eee;
+}
+.list-folder li a i{
+    font-size:30px;
+    color:orange;
+
+    transition-duration:0.2s;
+    -webkit-transition-duration:0.2s;
+    -moz-transition-duration:0.2s;
+}
+.list-folder li:hover a i{
+    color:#01D4B5;
+}
+
+.text_footer{
+    text-align:center;
+    margin:0 auto;
+    font-size:12px;
+    font-family:'Montserrat',sans-serif;
+    color:#aaa;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+@media screen and (max-width:980px){
+    .list-folder li{
+        width:32%;
+    }
+}
+@media screen and (max-width:599px){
+    .list-folder li{
+        width:49%;
+    }
+}
+@media screen and (max-width:460px){
+    .list-folder li{
+        width:100%;
+    }
+}
+
+p.message{font-size:14px;font-weight:bold;display:flex;margin:0 auto;font-family:'Montserrat',sans-serif;padding:10px 50px;color:#999;background:#fff;border-radius:10px;}
