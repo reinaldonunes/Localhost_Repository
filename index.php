@@ -25,7 +25,7 @@
             $diretorio = '.'; 
             $ponteiro = opendir($diretorio);
             while ($nome_itens = readdir($ponteiro)) {
-                if($nome_itens == 'assets') continue; // este if ignora páginas do sistema, como a Assets.
+                if($nome_itens == 'assets' || $nome_itens == '.git') continue; // este if ignora páginas do sistema, como a Assets.
                 $itens[] = $nome_itens;
             }
             sort($itens);
